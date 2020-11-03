@@ -7,8 +7,8 @@ from struct import *
 # defining the maximum table size
 # opening the compressed file
 # defining variables
-input_file, n = argv[1:]            
-maximum_table_size = pow(2,int(n))
+input_file = argv[1]            
+maximum_table_size = pow(2,int(16))
 file = open(input_file, "rb")
 compressed_data = []
 next_code = 256
