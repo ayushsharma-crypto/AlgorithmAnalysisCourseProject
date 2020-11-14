@@ -1,0 +1,18 @@
+
+Install the following libraries before running the code:
+sudo apt install python3-opencv
+pip install pillow --upgrade
+pip install pickle --upgrade
+pip install opencv-contrib-python
+
+run the following commands in the terminal (python interface)
+>>import cv2
+>>print(cv2.__file__)
+
+Go to the address and copy the 'data' directory  and then paste it in the cascades directory replacing the original one.
+
+If you are not present in the face recognition dataset then make a new directory of your name in 'images' and put some recent images of yours in it. 
+
+Run the faces-train.py code first to train the code .
+
+Then run faces.py 
