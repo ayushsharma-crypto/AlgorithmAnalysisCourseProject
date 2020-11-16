@@ -28,7 +28,7 @@
 
 2. run the command given below on your terminal 
 
-        python3 main.c
+        python3 main.py
 
 3. You will get a new screen in which you can play the game.
 4. for marking any box with X or O you can just click on that box.
