@@ -1,0 +1,88 @@
+Prototype of The Real-Life Scenario :-
+--------------------------------------
+
+The problem is, suppose there is a scenario in which you have 
+set of suspects {Suspect1,Suspect2,Suspect3,Suspect4...}
+like the cases that FBI solves everyday.
+Also you have their statements w.r.t each suspects,
+which can be concluded to one of the below three type:-
+(1) I don't know who is the culprit,but I'm not.
+(2) I know one of the suspects among {SuspectX1,SuspectX2,SuspectX3,SuspectX4...} 
+    is the culprit,but not me.
+(3) I don't know who is the culprit but any of the suspects among 
+    {SuspectX1,SuspectX2,SuspectX3,SuspectX4...} are not(,also not me).
+
+Now the Problem is For a very lage number of suspect we need large computation.
+Therefore, we need computers to step into effect.
+Hence, an algorithm is required to solve this huge computation which will 
+reduce the set of Suspects by considerable ammount.
+
+Applied algorithm :-
+---------------------
+
+*assuming only 1 culprit.
+
+Algoithm for reducing the size set of suspects based on the given suspect's statements
+uses graphical approach which is as follows:
+
+Step 1 - Consider all suspect to be node.
+
+Step-2 - With all suspect having statement as 1 described above draw a 
+         directed edge from that node(corresponding suspect) to all other node.
+
+Step-3 - With all suspect having statement as 2 described above draw a
+         directed edge from that node(corresponding suspect) to all other node
+         which that suspect point to.
+
+Step-4 - With all suspect having statement as 3 described above draw a
+         directed edge from that node(corresponding suspect) to all other node
+         which that suspect doesnot point to.
+
+Step-5 - For each node count the incoming edge that will be its Truth Count,which
+         we define as number of suspects saying truth if he is the culprit.
+
+
+Now we are at the point where we know that if suspect 'X' is a culprit ,How many are saying truth.
+Suppose, we found out that a initial set of suspect 'S' yields Graph 'G' from this we found out 
+if X1 is Culprit , then K1 are saying truth.
+if X2 is Culprit , then K2 are saying truth.
+if X3 is Culprit , then K3 are saying truth.
+.
+.
+.
+if X(n) is Culprit , then K(n) are saying truth.
+
+Now if we know came to know that exactly one suspect is saying truth then the reduced set of suspects will be such that
+Final set = { X(i) ;where K(i) = 1 }
+
+Therefore, for 'p' suspects saying the truth:
+Final set = { X(i) ;where K(i) = p }
+
+Worst Case Analysis
+-------------------
+The major drawback of this Algorithm is we might get the whole Set back.
+For example if p suspect are saying truth and we get Graph such that for all i , k(i)=p, Then final set = S.
+
+For example : S= {A, B, C} and we found two are saying truth based on prevailing conditions.
+A's statement = Culprit is either B or C i.e type b statement
+B's statement = Culprit is either A or C i.e type b statement
+C's statement = Culprit is either B or A i.e type b statement
+
+Then Final set = S = {A,B,C}
+
+
+Best Case Analysis
+-------------------
+We might get out the culprit directly from set S.
+
+For example : S= {A, B, C, D} and we found two are saying truth based on prevailing conditions.
+A' statement = I don;t know i.e type a statement
+B' statement = Culprit is either A or D i.e type b statement
+C' statement = A is not culprit i.e type c statement
+D' statement = Culprit is either A or B i.e. type b statement
+
+Then Final set = {A} and S = {A,B,C,D}
+because A's truth value = 2,
+B's truth value = 3
+C's truth value = 1
+D's truth value = 3

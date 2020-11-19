@@ -1,0 +1,25 @@
+-------------------------------------------
+Making the environment for prject         |
+-------------------------------------------
+
+To install venv: python3 -m pip install --user virtualenv
+
+To create an env: python3 -m venv env
+
+To check current env: source env/bin/activate
+
+To deactivate env: deactivate
+
+To check dependencies: pip freeze
+
+To install module 'k': pip install k
+
+-------------------------------------------
+Installing requirements for for Graph GUI |
+-------------------------------------------
+
+pip install networkx
+
+pip install matplotlib
+
+sudo apt-get install python3-tk
