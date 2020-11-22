@@ -124,14 +124,14 @@ def checkEndGame(playersChoiceList):
 # function which checks only end of game but does not draw any lines
 def checkEndGameDontDraw(playersChoiceList):
     for i in range(3):
-        if playersChoiceList[i] == playersChoiceList[i + 3] and playersChoiceList[i] == playersChoiceList[i + 6]:
+        if playersChoiceList[i] != 0 and playersChoiceList[i] == playersChoiceList[i + 3] and playersChoiceList[i] == playersChoiceList[i + 6]:
             return playersChoiceList[i]
-        if playersChoiceList[3 * i] == playersChoiceList[3 * i + 1] and playersChoiceList[3 * i + 1] == \
+        if playersChoiceList[3*i] != 0 and playersChoiceList[3 * i] == playersChoiceList[3 * i + 1] and playersChoiceList[3 * i + 1] == \
                 playersChoiceList[3 * i + 2]:
             return playersChoiceList[3 * i]
-    if playersChoiceList[0] == playersChoiceList[4] and playersChoiceList[4] == playersChoiceList[8]:
+    if playersChoiceList[0] != 0 and playersChoiceList[0] == playersChoiceList[4] and playersChoiceList[4] == playersChoiceList[8]:
         return playersChoiceList[0]
-    if playersChoiceList[2] == playersChoiceList[4] and playersChoiceList[4] == playersChoiceList[6]:
+    if playersChoiceList[2] !=0 and playersChoiceList[2] == playersChoiceList[4] and playersChoiceList[4] == playersChoiceList[6]:
         return playersChoiceList[2]
     for i in range(9):
         if playersChoiceList[i] == 0:
