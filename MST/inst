@@ -1,0 +1,7 @@
+libraries to install:
+
+    $ pip3 install matplotlib
+    $ pip3 install networkx
+
+To run: python3 mst.py
+use input redirection if you wish

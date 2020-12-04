@@ -1,0 +1,82 @@
+To run the program, follow the instructions:
+$ chmod +x script.sh
+$ ./script.sh
+
+Installation instructions for each algorithm to run
+
+a. Tic-Tac-Toe 
+    1. Requirements: For you to run this file, you should have `math`, `random` and `pygame` libraries of python installed or else you can install it by using the command:
+
+            pip3 install <library name>
+
+    2. run the command given below on your terminal 
+
+            python3 main.py
+
+    3. You will get a new screen in which you can play the game.
+    4. for marking any box with X or O you can just click on that box.
+
+b. Crime-algo
+
+        -------------------------------------------
+        Making the environment for prject         |
+        -------------------------------------------
+
+        To install venv: python3 -m pip install --user virtualenv
+
+        To create an env: python3 -m venv env
+
+        To check current env: source env/bin/activate
+
+        To deactivate env: deactivate
+
+        To check dependencies: pip freeze
+
+        To install module 'k': pip install k
+
+        -------------------------------------------
+        Installing requirements for for Graph GUI |
+        -------------------------------------------
+
+        pip install networkx
+
+        pip install matplotlib
+
+        sudo apt-get install python3-tk
+
+c.MST
+
+    libraries to install:
+
+    $ pip3 install matplotlib
+    $ pip3 install networkx
+
+    To run: python3 mst.py
+
+d.Compression
+
+    To encode, type: 
+	python encoder.py <inputFileName.txt> 
+
+    To decode, type:
+	python decoder.py <inputFileName.lzw> 
+
+e.FaceRec
+
+    Install the following libraries before running the code:
+    sudo apt install python3-opencv
+    pip install pillow --upgrade
+    pip install pickle --upgrade
+    pip install opencv-contrib-python
+
+    run the following commands in the terminal (python interface)
+    >>import cv2
+    >>print(cv2.__file__)
+
+    Go to the address and copy the 'data' directory  and then paste it in the cascades directory replacing the original one.
+
+    If you are not present in the face recognition dataset then make a new directory of your name in 'images' and put some recent images of yours in it. 
+
+    Run the faces-train.py code first to train the code .
+
+    Then run faces.py 

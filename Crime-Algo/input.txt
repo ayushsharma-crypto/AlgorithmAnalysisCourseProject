@@ -1,0 +1,23 @@
+This file contains few sample case to run the algo.
+!!
+Carefull refer theses cases as statement input for person's statement order might vary on run time.
+!!
+
+SAMPLE CASE : 1     [ For our story ]
+---------------
+5
+Tyrion Joffrey Bran Jon Ramsey
+
+Tyrion statment type: a
+
+Joffrey statment type: b
+Enter Joffrey's target suspects:Jon
+
+Bran statment type: b
+Enter Bran's target suspects:Jon
+
+Jon statment type: b
+Enter Jon's target suspects:Joffrey
+
+Ramsey statment type: b
+Enter Ramsey's target suspects:Tyrion
