@@ -1,7 +1,7 @@
-# alGOT - Game of Algorithms
+# Algorithms Envisioned
 
 
-# What is this project about?
+## What is this project about?
 
 This project takes a shot at choosing algorithms of different territories and attempts at teaching the end user what a particular algorithm is all about. There are two sections to each algorithm, a presentation explaining the use case of an algorithm in a story/scenario and an implementation of each algorithm in python3 using visual means as well.
 
