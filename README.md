@@ -1,4 +1,5 @@
-# Title
+# alGOT - Game of Algorithms
+
 
 # What is this project about?
 
@@ -13,4 +14,4 @@ This project takes a shot at choosing algorithms of different territories and at
 
 
 ## Other details
-All of the program is compiled in the form of an interactive shell script, instructions to run which are given in the repository as 'instructions.txt'. The instructions file also contains all the packages which needs to be installed along with other basic instructions.
+All of the program is compiled in the form of an interactive shell script, instructions to run which are given in the repository. The instructions file also contains all the packages which needs to be installed along with other basic instructions.
